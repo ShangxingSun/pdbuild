@@ -62,7 +62,7 @@ p.footer {
   height: 100%;
 
   background: #171717 url(./splash.gif) no-repeat center;
-  background-size: 40%;
+  background-size: 100%;
 }
 
 .progress-bar {
