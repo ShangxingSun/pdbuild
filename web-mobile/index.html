@@ -5,6 +5,7 @@
 
   <title>Tron-PokerDice</title>
   <link rel="shortcut icon" href="res/gameicon.ico">
+
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
         content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
@@ -40,18 +41,10 @@
   <link rel="stylesheet" type="text/css" href="style-mobile.6187c.css"/>
   <script id="chatBroEmbedCode">
     /* Chatbro Widget Embed Code Start */
-    function ChatbroLoader(chats, async) { async = !1 !== async; var params = { embedChatsParameters: chats instanceof Array ? chats : [chats], lang: navigator.language || navigator.userLanguage, needLoadCode: 'undefined' == typeof Chatbro, embedParamsVersion: localStorage.embedParamsVersion, chatbroScriptVersion: localStorage.chatbroScriptVersion }, xhr = new XMLHttpRequest; xhr.withCredentials = !0,
-     xhr.onload = function () { 
-       eval(xhr.responseText);
-       chat = document.getElementsByClassName("chatbro_send_input")[0];
-        chat.onblur = function () {
-                    document.body.scrollTop = document.body.scrollHeight;
-                }
-      }, xhr.onerror = function () { console.error('Chatbro loading error') }, xhr.open('GET', '//www.chatbro.com/embed.js?' + btoa(unescape(encodeURIComponent(JSON.stringify(params)))), async), xhr.send() }
+    function ChatbroLoader(chats,async){async=!1!==async;var params={embedChatsParameters:chats instanceof Array?chats:[chats],lang:navigator.language||navigator.userLanguage,needLoadCode:'undefined'==typeof Chatbro,embedParamsVersion:localStorage.embedParamsVersion,chatbroScriptVersion:localStorage.chatbroScriptVersion},xhr=new XMLHttpRequest;xhr.withCredentials=!0,xhr.onload=function(){eval(xhr.responseText)},xhr.onerror=function(){console.error('Chatbro loading error')},xhr.open('GET','//www.chatbro.com/embed.js?'+btoa(unescape(encodeURIComponent(JSON.stringify(params)))),async),xhr.send()}
     /* Chatbro Widget Embed Code End */
     ChatInit = function (chatName) {
-      var chatUserId = Date.parse(new Date()) + Math.floor(Math.random() * 10000);
-      ChatbroLoader({ encodedChatId: '73Aji', siteDomain: "10.0.75.1", siteUserExternalId: chatUserId, siteUserFullName: chatName });
+      ChatbroLoader({ encodedChatId: '73Aji', siteDomain: "pokerdice.rovegas.com", siteUserExternalId: chatName, siteUserFullName: chatName });
     }
   </script>
 
@@ -65,8 +58,7 @@
   </div>
 <script src="src/settings.a450f.js" charset="utf-8"></script>
 
-
-<script src="main.3e913.js" charset="utf-8"></script>
+<script src="main.93d81.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
